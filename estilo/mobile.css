@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    border: none;
+}
+
+header label {
+    display: block;
+}
+
+.logo {
+    display: block;
+    float: right;
+    height: 25px;
+    margin-top: -32px;
+    margin-right: 10px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    margin-left: -100%;
+}
+
+.menu ul {
+    flex-direction: column;
+}
+
+.menu li {
+    text-align: left;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.menu li a {
+    padding: 15px;
+}
+
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+/*
+#btn-menu:checked ~ label {
+    width: 100%;
+    background: #ddd;
+    transition: 1.5s 0.75s;
+}
+*/
+/******************* PADRÃO CONFIG ACIMA ***********************/
+
+footer p {
+    font-size: 0.55em;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.b {
+    float: none;
+    text-align: center;
+    margin: 15px auto;
+    width: 150px;
+}
+
+.c,
+.d,
+.e {
+    padding: 2%;
+    margin: 3%;
+    width: 90%;
+}
+
+#principal {
+    font-size: 0.6em;
+}
+
+/****************** MODIFICAÇÕES PARA NOVO MENU **************************/
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.menu li {
+    margin-left: -110%;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.9);
+}
+
+#btn-menu:checked ~ .menu #lia {
+    margin: 0;
+    transition: margin 0.7s 0.1s;
+}
+
+#btn-menu:checked ~ .menu #lib {
+    margin: 0;
+    transition: margin 0.7s 0.15s;
+}
+
+#btn-menu:checked ~ .menu #lic {
+    margin: 0;
+    transition: margin 0.7s 0.2s;
+}
+
+#btn-menu:checked ~ .menu #lid {
+    margin: 0;
+    transition: margin 0.7s 0.25s;
+}
+
+#btn-menu:checked ~ .menu #lie {
+    margin: 0;
+    transition: margin 0.7s 0.3s;
+}
+
+#btn-menu:checked ~ .menu #lif {
+    margin: 0;
+    transition: margin 0.7s 0.35s;
+}

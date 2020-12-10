@@ -1,0 +1,224 @@
+html {
+    font-family: verdana;
+    background: url(../imagens/bg.jpg);
+}
+
+body {
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:600px) {
+    .logo {
+        width: 20%;
+        position: fixed;
+        margin-top: 50px;
+        margin-left: 79%;
+    }
+    .logo img {
+        width: 100%;
+    }
+}
+
+#btn-menu {
+    display: none;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 2;
+}
+
+
+/******PARA MENU MOBILE*******/
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*****************************/
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 0px;
+    color: #fff;
+    text-decoration: none;
+    height: 20px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: #6d6d6d;
+    background-image: url(../imagens/bg.jpg);
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #6d6d6d;
+    height: auto;
+    padding: 1%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.65em;
+}
+
+
+/******************* PADRÃO CONFIG ACIMA ***********************/
+
+.conteudo {
+    float: left;
+    margin: 0px;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 1
+}
+
+@keyframes anima {
+    0%{transform: translate(0px, 0px)}
+    20%{transform: translate(0px, 3px)}
+    40%{transform: translate(0px, 6px)}
+    60%{transform: translate(0px, 8px)}
+    80%{transform: translate(0px, 10px)}
+    100%{transform: translate(0px, 11px)}
+}
+
+.a img {
+    width: 100%;
+    position: fixed;
+    z-index: -3;
+}
+
+.a {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.b {
+    float: left;
+    margin: 2%;
+    width: 30%;
+    animation: anima 0.75s linear infinite alternate;
+    position: relative;
+}
+
+.b img {
+    width: 100%;
+}
+
+.c,
+.d,
+.e {
+    float: left;
+    /*background: linear-gradient(#fff 25%, #eee);
+    border: 2px solid #ddd;
+    border-radius: 20px;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    padding: 1%;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.d p {
+    text-align: justify;
+}
+
+.e img {
+    width: 40%;
+    margin: 4%;
+    max-width: 170px;
+}
+
+/*********************** TABELA ************************/
+
+#principal h1 {
+    font-size: 11pt;
+    text-align: center;
+}
+
+#principal {
+    font-size: 10pt;
+    text-align: center;
+}
+
+#tab,
+#tab1,
+#tab2 {
+    margin: 0px auto;
+    border-spacing: 0;
+    border: 2px solid #393232;
+    width: 100%;
+}
+
+#ea,
+#eb,
+#ec {
+    cursor: pointer;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 15px 15px 0 0;
+    background: rgba(165, 200, 220, 0.5);
+    margin-top: 20px;
+}
+
+#ea:hover,
+#eb:hover,
+#ec:hover {
+    background: rgba(165, 200, 220, 0.95);
+}
+
+.tcolor {
+    background-color: #ccc;
+    text-align: center;
+}
+
+.mcolor {
+    background-color: #40deeb;
+    text-align: center;
+}
+
+.bcolor {
+    background-color: #fff;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    border: 2px solid #3e3b3b;
+}
+
+th:nth-child(odd),
+td:nth-child(odd) {
+    border-bottom: 2px solid #3e3b3b;
+    border-top: 2px solid #3e3b3b;
+}
